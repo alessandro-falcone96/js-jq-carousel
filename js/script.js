@@ -3,7 +3,7 @@ $(".fa-angle-right").click(
     var imgActive = $('.images img.active');
     var circleActive = $('.nav i.active');
 
-    if (($('.images img.active')).is('.last')) {
+    if (imgActive.is('.last')) {
       $(imgActive).removeClass("active");
       $('.images img.first').addClass("active");
       $(circleActive).removeClass("active");
@@ -23,7 +23,7 @@ $(".fa-angle-left").click(
     var imgActive = $('.images img.active');
     var circleActive = $('.nav i.active');
 
-    if (($('.images img.active')).is('.first')) {
+    if (imgActive.is('.first')) {
       $(imgActive).removeClass("active");
       $('.images img.last').addClass("active");
       $(circleActive).removeClass("active");
