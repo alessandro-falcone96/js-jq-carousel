@@ -50,6 +50,7 @@
     border-radius: 999px;
     background: rgba(0,0,0,.7);
     color: white;
+    display: flex;
 }
 .nav > i {
     margin: 0 20px;
@@ -57,4 +58,12 @@
 }
 .nav > i.active {
     color: blue;
+}
+
+
+@media only screen and (orientation: portrait) {
+  .slider-wrapper{
+    height: 20%;
+    margin: 30% auto;
+  }
 }
