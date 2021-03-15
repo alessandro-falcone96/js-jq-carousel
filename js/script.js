@@ -115,6 +115,37 @@ $(document).ready(function() {
     }
   );
 
+  // // Soluzione 1 di Samu per cambiare le immagini cliccando sui pallini
+  //
+  // $(".nav i").click(
+  //   function() {
+  //
+  //     var bulletClicked = $(this);
+  //     var bulletClickedIndex = $(this).index();
+  //     bulletClickedIndex++;
+  //
+  //     $(".images img.active").removeClass("active");
+  //     $(".images img:nth-child("+bulletClickedIndex+")").addClass("active");
+  //
+  //     $(".nav i").removeClass("active");
+  //     bulletClicked.addClass("active");
+  // });
+
+  // // Soluzione 2 di Samu per cambiare le immagini cliccando sui pallini
+  //
+  // $(".nav i").click(
+  //   function() {
+  //
+  //     var bulletClicked = $(this);
+  //     var bulletClickedIndex = $(this).index();
+  //
+  //     $(".images img.active").removeClass("active");
+  //     $(".images img").eq(bulletClickedIndex).addClass("active");
+  //
+  //     $(".nav i").removeClass("active");
+  //     bulletClicked.addClass("active");
+  // });
+
 });
 
 
